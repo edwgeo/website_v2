@@ -10013,3 +10013,12 @@ header {
 section {
   padding: 150px 0;
 }
+
+/*Edwin additions begin here*/
+.company-name {
+  display: inline;
+}
+
+.location-date {
+  font-style: italic;
+}
