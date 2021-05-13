@@ -14,12 +14,14 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">Edwin George</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experiences">Experiences</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -35,12 +37,15 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
-                        <h2>About Me</h2>
-                        <p class="lead">Hi! I’m an undergraduate student (Class of ‘21) at the University of California, Irvine pursuing a major in Computer Science with a minor in Business Management. 👨🏽‍🎓
+                        <h2 class="section-title">About Me</h2>
+                        <img class="me-image" src="assets/edwin.png"></img>
+                        <div class="about-information">
+                            <p class="lead">Hi! I’m an undergraduate student (Class of ‘21) at the University of California, Irvine pursuing a major in Computer Science with a minor in Business Management. 👨🏽‍🎓</p>
 
-                        <p class = "lead">In my past experiences, I’ve worked with a broad range of technologies related to software engineering (machine learning, building a search engine, web frameworks) and even extending beyond (using Figma for product design, learning FFmpeg to edit videos, and applying market research to understand if a product is viable). 💻</p>
+                            <p class = "lead">In my past experiences, I’ve worked with a broad range of technologies related to software engineering (machine learning, building a search engine, web frameworks) and even extending beyond (using Figma for product design, learning FFmpeg to edit videos, and applying market research to understand if a product is viable). 💻</p>
 
-                        <p class = "lead">When I have some spare time, I enjoy watching documentaries, hiking, and reading. 📚</p>
+                            <p class = "lead">When I have some spare time, I enjoy watching documentaries, hiking, and reading. 📚</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -49,31 +54,138 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
-                        <h2>Experiences</h2>
-                        <h4>Neoboard</h4> <h6 class = "location-date">Irvine, CA • May 2021 - Present</h6>
-                        <ul>
-                            <li>Developed an algorithm to group students together based on common attributes using Python and hooked it up to AWS EC2</li>
-                            <li>Programmed complex mathematical calculations which tracked over 20 data points from each of the 13,000 students in an average university and identified which students fit best together based on those attributes</li>
-                            <li>Used Scrum Agile tools (Jira) to keep track of progress on vital issues by arranging tasks into weekly sprints</li>
-                        </ul>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+                        <h2 class="section-title">Experiences</h2>
+                        <div class="two-column">
+                            <div class="item-title">
+                                <h4>Neoboard</h4> <h6 class = "location-date">Irvine, CA • May 2021 - Present</h6>
+                            </div>
+                            <div class="item-content">
+                                <ul class="list-tasks">
+                                    <li class="task">Developed an algorithm to group students together based on common attributes using Python and hooked it up to AWS EC2</li>
+                                    <li class="task">Programmed complex mathematical calculations which tracked over 20 data points from each of the 13,000 students in an average university and identified which students fit best together based on those attributes</li>
+                                    <li class="task">Used Scrum Agile tools (Jira) to keep track of progress on vital issues by arranging tasks into weekly sprints</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="two-column">
+                            <div class="item-title">
+                                <h4>Pure Storage</h4> <h6 class = "location-date">Mountain View, CA • June 2020 - September 2020</h6>
+                            </div>
+                            <div class="item-content">
+                                <ul class="list-tasks">
+                                    <li class="task">Used Python to ETL 4 years of fiscal data from 100+ messy Excel spreadsheets into uniform CSV files containing a total of over 80,000+ entries. Saved ~800 hours of manual work by automating the process.</li>
+                                    <li class="task">Applied PostgreSQL and Python to automatically ETL tariff data from ~20 different database tables, join it together, and project the total cost of tariffs for next 4 quarters. Saved cost operations team ~500 hours per quarter with automation.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="two-column">
+                            <div class="item-title">
+                                <h4>Pixelworks</h4> <h6 class = "location-date">San Jose, CA • June 2018 - September 2018</h6>
+                            </div>
+                            <div class="item-content">
+                                <ul class="list-jobs">
+                                    <li class="task">Collected and analyzed analyst trend reports (IHS Markit) to integrate external data into internal analysis. Conducted top 10 analysis on smartphone market and organized data into a spreadsheet to display OEM shipment volume by region, smartphone model, and launch time</li>
+                                    <li class="task">Designed and developed a short video (~2 min) to for promotion to potential clients. Used 20+ video clips available online to illustrate power of Pixelworks technology using FFmpeg.</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="bg-light" id="projects">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="section-title">Projects</h2>
+                        <div class="two-column">
+                            <div class="item-title">
+                                <h4>ZotFit Fitness</h4> <h6 class = "location-date">Jan 2021 - March 2021</h6> <!-- Put Github links here -->
+                            </div>
+                            <div class="item-content">
+                                <ul class="list-tasks">
+                                    <li class="task">Utilized the Django Python framework and Python’s Pandas library to develop a recommendation system to help users get in shape by providing them with an adaptable workout routine</li>
+                                    <li class="task">Personalized application by taking into account various metrics (weight, height, age) of the user and determining what workouts would be best for them</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="two-column">
+                            <div class="item-title">
+                                <h4>ICS Search Engine</h4> <h6 class = "location-date">Jan 2020 - March 2020</h6>
+                            </div>
+                            <div class="item-content">
+                                <ul class="list-tasks">
+                                    <li class="task">Wrote a search engine capable of handling tens of thousands of documents or Web pages, under numerous operational constraints and having a query response time under 500ms</li>
+                                    <li class="task">Separated search index into numerous smaller pieces in order to account for and avoid excessive memory usage</li>
+                                    <li class="task">Used Python’s Flask framework to provide an online user interface which improved the search engine’s accessibility to users who are not familiar with the command line</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="two-column">
+                            <div class="item-title">
+                                <h4>Made with Play</h4> <h6 class = "location-date">March 2020 - June 2020</h6>
+                            </div>
+                            <div class="item-content">
+                                <ul class="list-jobs">
+                                    <li class="task">Helped design and develop a responsive website for an on-campus lab with 5 other students using Python and Flask to display all the various initiatives, members, and publications from the lab</li>
+                                    <li class="task">Organized the development of the project in accordance with Agile methodologies, using Scrum Agile tools such as a Kanban board and splitting tasks into two-week long sprints.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-light" id="education">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="section-title">Education</h2>
+                        <div class="two-column">
+                            <div class="item-title">
+                                <h4>University of California, Irvine</h4> <h6 class = "location-date">2017 - 2021</h6>
+                            </div>
+                            <div class="item-content-university">
+                                <p><i>Activities and Societies:</i> Anteater Linkedin Group, Healing Through Humanities, Liberty in North Korea</p>
+                                <p>During my time at UC Irvine, I took a number of courses which inspired and guided me through the fundamentals of Computer Science and it’s myriad applications in our current society. Some courses I believe were the most important are:</p>
+                                <ul class="list-tasks">
+                                    <li class="courses"><u>Data Structures and Algorithms:</u> The quintessential computer science class; the fundamentals underpinning every computing application.</li>
+                                    <li class="courses"><u>Boolean Algebra, Discrete Math:</u> Learned the logical frameworks vital to any program.</li>
+                                    <li class="courses"><u>Linear Algebra, Machine Learning, Artificial Intelligence:</u> Studied the mathematics behind one of the most prominent computing fields today through project-based courses.</li>
+                                    <li class="courses"><u>Introduction to Databases:</u> The history, concepts, and design practices of relational databases</li>
+                                    <li class="courses"><u>Information Retrieval, Next-gen Search Systems:</u> How to extract or organize the vast ocean of information on the web, such as in search engines like Google</li>
+                                    <li class="courses"><u>Human-Computer Interaction, Software Design:</u> The process of designing applications for all kinds of humans</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="two-column">
+                            <div class="item-title">
+                                <h4>Bellarmine College Preparatory</h4> <h6 class = "location-date">2013 - 2017</h6>
+                            </div>
+                            <div class="item-content-university">
+                                <p><i>Activities and Societies:</i> Speech and Debate, Cross Country, Geography for Tomorrow</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="contact">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
-                        <h2>Contact us</h2>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+                        <h2 class="section-title">Contact Me</h2>
+                        <p class="lead">Feel free to reach out and contact me! You can reach me via <a href="mailto:edwgeo@gmail.com">email (edwgeo@gmail.com)</a> or <a href="https://www.linkedin.com/in/edwingeorge">Linkedin</a></p>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Footer-->
         <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p></div>
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Edwin George 2021</p></div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
